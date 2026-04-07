@@ -8,7 +8,18 @@ importers:
 
   .: {}
 
-  packages/accessibility-bridge: {}
+  packages/accessibility-bridge:
+    dependencies:
+      '@eu-compliance-bridge/ai-act-classifier':
+        specifier: workspace:*
+        version: link:../ai-act-classifier
+    devDependencies:
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+      vitest:
+        specifier: ^3.0.0
+        version: 3.2.4
 
   packages/ai-act-classifier:
     devDependencies:

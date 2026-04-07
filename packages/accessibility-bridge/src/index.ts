@@ -1,17 +1,3 @@
-/**
- * @eu-compliance-bridge/accessibility-bridge
- *
- * Maps EU AI Act Article 16(l) obligations to EN 301 549 accessibility requirements.
- * This is the core innovation of the eu-compliance-bridge project.
- *
- * Status: In development
- *
- * Planned features:
- * - AI Act article → EN 301 549 clause mapping
- * - AI Accessibility Impact Assessment (AAIA) methodology
- * - Testing framework for AI-generated content accessibility
- * - Accessibility evaluation for conversational AI interfaces
- */
-
-export const VERSION = '0.0.1'
-export const STATUS = 'in-development'
+export { generateAAIA, type AAIAInput, type AAIAResult, type AAIARequirement } from './aaia.js'
+export { AI_ACT_ACCESSIBILITY_MAPPINGS, type AIActAccessibilityMapping } from './ai-act-mapping.js'
+export { EN_301_549_CLAUSES, type EN301549Clause } from './en-301-549.js'
