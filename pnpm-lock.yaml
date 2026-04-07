@@ -19,7 +19,7 @@ importers:
         version: 5.9.3
       vitest:
         specifier: ^3.0.0
-        version: 3.2.4
+        version: 3.2.4(@types/node@25.5.2)
 
   packages/ai-act-classifier:
     devDependencies:
@@ -28,11 +28,51 @@ importers:
         version: 5.9.3
       vitest:
         specifier: ^3.0.0
-        version: 3.2.4
+        version: 3.2.4(@types/node@25.5.2)
 
-  packages/cli: {}
+  packages/cli:
+    dependencies:
+      '@eu-compliance-bridge/accessibility-bridge':
+        specifier: workspace:*
+        version: link:../accessibility-bridge
+      '@eu-compliance-bridge/ai-act-classifier':
+        specifier: workspace:*
+        version: link:../ai-act-classifier
+      '@eu-compliance-bridge/docs-generator':
+        specifier: workspace:*
+        version: link:../docs-generator
+      '@eu-compliance-bridge/fria-generator':
+        specifier: workspace:*
+        version: link:../fria-generator
+    devDependencies:
+      '@types/node':
+        specifier: ^25.5.2
+        version: 25.5.2
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+      vitest:
+        specifier: ^3.0.0
+        version: 3.2.4(@types/node@25.5.2)
 
-  packages/docs-generator: {}
+  packages/docs-generator:
+    dependencies:
+      '@eu-compliance-bridge/accessibility-bridge':
+        specifier: workspace:*
+        version: link:../accessibility-bridge
+      '@eu-compliance-bridge/ai-act-classifier':
+        specifier: workspace:*
+        version: link:../ai-act-classifier
+      '@eu-compliance-bridge/fria-generator':
+        specifier: workspace:*
+        version: link:../fria-generator
+    devDependencies:
+      typescript:
+        specifier: ^5.7.0
+        version: 5.9.3
+      vitest:
+        specifier: ^3.0.0
+        version: 3.2.4(@types/node@25.5.2)
 
   packages/fria-generator:
     dependencies:
@@ -45,7 +85,7 @@ importers:
         version: 5.9.3
       vitest:
         specifier: ^3.0.0
-        version: 3.2.4
+        version: 3.2.4(@types/node@25.5.2)
 
 packages:
 
@@ -342,6 +382,9 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
+  '@types/node@25.5.2':
+    resolution: {integrity: sha512-tO4ZIRKNC+MDWV4qKVZe3Ql/woTnmHDr5JD8UI5hn2pwBrHEwOEMZK7WlNb5RKB6EoJ02gwmQS9OrjuFnZYdpg==}
+
   '@vitest/expect@3.2.4':
     resolution: {integrity: sha512-Io0yyORnB6sikFlt8QW5K7slY4OjqNX9jmJQ02QDda8lyM6B5oNgVWoSoKPac8/kgnCUzuHQKrSLtu/uOqqrig==}
 
@@ -511,6 +554,9 @@ packages:
     resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  undici-types@7.18.2:
+    resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
 
   vite-node@3.2.4:
     resolution: {integrity: sha512-EbKSKh+bh1E1IFxeO0pg1n4dvoOTt0UDiXMd/qn++r98+jPO1xtJilvXldeuQ8giIB5IkpjCgMleHMNEsGH6pg==}
@@ -756,6 +802,10 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
+  '@types/node@25.5.2':
+    dependencies:
+      undici-types: 7.18.2
+
   '@vitest/expect@3.2.4':
     dependencies:
       '@types/chai': 5.2.3
@@ -764,13 +814,13 @@ snapshots:
       chai: 5.3.3
       tinyrainbow: 2.0.0
 
-  '@vitest/mocker@3.2.4(vite@7.3.2)':
+  '@vitest/mocker@3.2.4(vite@7.3.2(@types/node@25.5.2))':
     dependencies:
       '@vitest/spy': 3.2.4
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.3.2
+      vite: 7.3.2(@types/node@25.5.2)
 
   '@vitest/pretty-format@3.2.4':
     dependencies:
@@ -948,13 +998,15 @@ snapshots:
 
   typescript@5.9.3: {}
 
-  vite-node@3.2.4:
+  undici-types@7.18.2: {}
+
+  vite-node@3.2.4(@types/node@25.5.2):
     dependencies:
       cac: 6.7.14
       debug: 4.4.3
       es-module-lexer: 1.7.0
       pathe: 2.0.3
-      vite: 7.3.2
+      vite: 7.3.2(@types/node@25.5.2)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -969,7 +1021,7 @@ snapshots:
       - tsx
       - yaml
 
-  vite@7.3.2:
+  vite@7.3.2(@types/node@25.5.2):
     dependencies:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
@@ -978,13 +1030,14 @@ snapshots:
       rollup: 4.60.1
       tinyglobby: 0.2.15
     optionalDependencies:
+      '@types/node': 25.5.2
       fsevents: 2.3.3
 
-  vitest@3.2.4:
+  vitest@3.2.4(@types/node@25.5.2):
     dependencies:
       '@types/chai': 5.2.3
       '@vitest/expect': 3.2.4
-      '@vitest/mocker': 3.2.4(vite@7.3.2)
+      '@vitest/mocker': 3.2.4(vite@7.3.2(@types/node@25.5.2))
       '@vitest/pretty-format': 3.2.4
       '@vitest/runner': 3.2.4
       '@vitest/snapshot': 3.2.4
@@ -1002,9 +1055,11 @@ snapshots:
       tinyglobby: 0.2.15
       tinypool: 1.1.1
       tinyrainbow: 2.0.0
-      vite: 7.3.2
-      vite-node: 3.2.4
+      vite: 7.3.2(@types/node@25.5.2)
+      vite-node: 3.2.4(@types/node@25.5.2)
       why-is-node-running: 2.3.0
+    optionalDependencies:
+      '@types/node': 25.5.2
     transitivePeerDependencies:
       - jiti
       - less

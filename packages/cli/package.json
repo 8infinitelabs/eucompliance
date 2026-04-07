@@ -1,11 +1,32 @@
 {
   "name": "@eu-compliance-bridge/cli",
-  "version": "0.0.1",
-  "description": "CLI tool for EU AI Act + EAA compliance assessment",
+  "version": "0.1.0",
+  "description": "CLI for EU AI Act + EAA compliance assessment",
   "license": "EUPL-1.2",
   "type": "module",
   "bin": {
     "eu-compliance-bridge": "dist/index.js"
   },
-  "private": true
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo 'CLI tested via integration'",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@eu-compliance-bridge/accessibility-bridge": "workspace:*",
+    "@eu-compliance-bridge/ai-act-classifier": "workspace:*",
+    "@eu-compliance-bridge/docs-generator": "workspace:*",
+    "@eu-compliance-bridge/fria-generator": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
 }

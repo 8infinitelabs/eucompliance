@@ -1,10 +1,32 @@
 {
   "name": "@eu-compliance-bridge/docs-generator",
-  "version": "0.0.1",
-  "description": "Generates Annex IV technical documentation and accessibility statements",
+  "version": "0.1.0",
+  "description": "Generates Annex IV technical documentation, accessibility statements, and compliance reports",
   "license": "EUPL-1.2",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "private": true
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@eu-compliance-bridge/ai-act-classifier": "workspace:*",
+    "@eu-compliance-bridge/accessibility-bridge": "workspace:*",
+    "@eu-compliance-bridge/fria-generator": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
 }
