@@ -1,0 +1,47 @@
+{
+  "version": "v1.0.0",
+  "entity": {
+    "type": "organisation",
+    "role": "maintainer",
+    "name": "Infinite Labs OÜ",
+    "email": "hello@regulia.app",
+    "phone": "",
+    "description": "EU compliance automation for SMEs",
+    "webpageUrl": {
+      "url": "https://regulia.app"
+    }
+  },
+  "projects": [
+    {
+      "guid": "eu-compliance-bridge",
+      "name": "EU Compliance Bridge",
+      "description": "Open source toolkit bridging EU AI Act and European Accessibility Act compliance. Operationalizes Article 16(l) of the AI Act for the first time.",
+      "webpageUrl": {
+        "url": "https://github.com/8infinitelabs/eu-compliance-bridge"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/8infinitelabs/eu-compliance-bridge",
+        "type": "git"
+      },
+      "licenses": ["EUPL-1.2"],
+      "tags": ["eu-ai-act", "accessibility", "compliance", "eaa", "en-301-549", "wcag"]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "nlnet-ngi-zero-commons",
+        "type": "grant",
+        "description": "NLnet NGI Zero Commons Fund application (June 2026)"
+      }
+    ],
+    "plans": [
+      {
+        "guid": "nlnet-2026",
+        "status": "applying",
+        "channel": "nlnet-ngi-zero-commons",
+        "description": "EU AI Act x EAA compliance toolkit for communities and NGOs"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@eu-compliance-bridge/fria-generator",
+  "version": "0.0.1",
+  "description": "Fundamental Rights Impact Assessment generator based on DIHR/ECNL framework",
+  "license": "EUPL-1.2",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true
+}

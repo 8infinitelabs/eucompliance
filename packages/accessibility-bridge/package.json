@@ -1,0 +1,10 @@
+{
+  "name": "@eu-compliance-bridge/accessibility-bridge",
+  "version": "0.0.1",
+  "description": "Maps EU AI Act obligations to EN 301 549 accessibility requirements — the missing bridge",
+  "license": "EUPL-1.2",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true
+}

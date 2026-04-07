@@ -1,0 +1,6 @@
+export { classify, classifyFromDescription, type ClassificationResult, type ClassificationInput } from './classifier.js'
+export { ANNEX_III_CATEGORIES, type AnnexIIICategory } from './annex-iii.js'
+export { CONFORMITY_STEPS, type ConformityStep } from './conformity-steps.js'
+export { OVERSIGHT_REQUIREMENTS, type OversightRequirement } from './oversight-requirements.js'
+export { PROHIBITED_PRACTICES, type ProhibitedPractice } from './prohibited-practices.js'
+export { matchAnnexIII } from './matcher.js'

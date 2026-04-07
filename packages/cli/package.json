@@ -1,0 +1,11 @@
+{
+  "name": "@eu-compliance-bridge/cli",
+  "version": "0.0.1",
+  "description": "CLI tool for EU AI Act + EAA compliance assessment",
+  "license": "EUPL-1.2",
+  "type": "module",
+  "bin": {
+    "eu-compliance-bridge": "dist/index.js"
+  },
+  "private": true
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@eu-compliance-bridge/docs-generator",
+  "version": "0.0.1",
+  "description": "Generates Annex IV technical documentation and accessibility statements",
+  "license": "EUPL-1.2",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true
+}

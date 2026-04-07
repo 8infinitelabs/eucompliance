@@ -1,0 +1,36 @@
+{
+  "name": "@eu-compliance-bridge/ai-act-classifier",
+  "version": "0.1.0",
+  "description": "EU AI Act risk classifier with Annex III mapping, conformity steps, and oversight requirements",
+  "license": "EUPL-1.2",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "keywords": [
+    "eu-ai-act",
+    "compliance",
+    "risk-classification",
+    "annex-iii",
+    "regulation-2024-1689",
+    "accessibility",
+    "en-301-549"
+  ]
+}

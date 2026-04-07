@@ -1,0 +1,16 @@
+{
+  "name": "eu-compliance-bridge",
+  "private": true,
+  "description": "Open source toolkit bridging EU AI Act and European Accessibility Act compliance",
+  "license": "EUPL-1.2",
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  }
+}
