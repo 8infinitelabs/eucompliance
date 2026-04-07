@@ -179,6 +179,43 @@ Priority areas:
 - **Translations**: Regulatory data in EU languages
 - **Documentation**: Guides for non-technical users
 
+## Regulia — The Hosted Platform
+
+Prefer a no-code dashboard over a CLI? **[Regulia](https://regulia.app)** is the commercial SaaS built on top of eu-compliance-bridge:
+
+- Visual dashboard for EAA, NIS2, and AI Act compliance
+- Automated web accessibility scanning (axe-core)
+- Scheduled monitoring with email alerts
+- AI-generated compliance documentation
+- PDF reports for auditors
+- Team management and multi-site support
+
+The open source toolkit powers the compliance engine. Regulia adds the UI, automation, and hosted infrastructure.
+
+[Try Regulia free](https://regulia.app) | [Free accessibility scan](https://regulia.app/scan)
+
+## Community
+
+- [GitHub Discussions](https://github.com/8infinitelabs/eu-compliance-bridge/discussions) — Questions, ideas, feedback
+- [GitHub Issues](https://github.com/8infinitelabs/eu-compliance-bridge/issues) — Bug reports and feature requests
+- [Documentation](./docs/) — Guides, concepts, and reference
+
+### Who Is This For?
+
+- **Developers** building AI systems that need EU compliance
+- **NGOs** advocating for disability rights and AI accountability
+- **Public sector** organizations deploying high-risk AI
+- **Compliance officers** who need affordable tooling
+- **Researchers** studying the intersection of AI governance and accessibility
+
+### How to Get Involved
+
+1. Star the repo to show support
+2. Try the CLI: `npx eu-compliance-bridge classify "your AI system description"`
+3. Open an issue if you find gaps in the regulatory mappings
+4. Contribute translations to EU languages
+5. Share with your network — this gap needs visibility
+
 ## Funding
 
 This project is applying to the [NLnet NGI Zero Commons Fund](https://nlnet.nl/commonsfund/) (funded by the European Commission via Horizon Europe).
