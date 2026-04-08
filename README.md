@@ -196,7 +196,8 @@ The open source toolkit powers the compliance engine. Regulia adds the UI, autom
 
 ## Community
 
-- [GitHub Discussions](https://github.com/8infinitelabs/eu-compliance-bridge/discussions) — Questions, ideas, feedback
+- [Blog](https://blog.regulia.app) — Articles on EU AI Act, EAA, and compliance
+- [GitHub Discussions](https://github.com/8infinitelabs/eucompliance/discussions) — Questions, ideas, feedback
 - [GitHub Issues](https://github.com/8infinitelabs/eu-compliance-bridge/issues) — Bug reports and feature requests
 - [Documentation](./docs/) — Guides, concepts, and reference
 
