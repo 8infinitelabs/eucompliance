@@ -10,7 +10,7 @@ importers:
 
   packages/accessibility-bridge:
     dependencies:
-      '@eu-compliance-bridge/ai-act-classifier':
+      '@eucompliance/ai-act-classifier':
         specifier: workspace:*
         version: link:../ai-act-classifier
     devDependencies:
@@ -32,16 +32,16 @@ importers:
 
   packages/cli:
     dependencies:
-      '@eu-compliance-bridge/accessibility-bridge':
+      '@eucompliance/accessibility-bridge':
         specifier: workspace:*
         version: link:../accessibility-bridge
-      '@eu-compliance-bridge/ai-act-classifier':
+      '@eucompliance/ai-act-classifier':
         specifier: workspace:*
         version: link:../ai-act-classifier
-      '@eu-compliance-bridge/docs-generator':
+      '@eucompliance/docs-generator':
         specifier: workspace:*
         version: link:../docs-generator
-      '@eu-compliance-bridge/fria-generator':
+      '@eucompliance/fria-generator':
         specifier: workspace:*
         version: link:../fria-generator
     devDependencies:
@@ -57,13 +57,13 @@ importers:
 
   packages/docs-generator:
     dependencies:
-      '@eu-compliance-bridge/accessibility-bridge':
+      '@eucompliance/accessibility-bridge':
         specifier: workspace:*
         version: link:../accessibility-bridge
-      '@eu-compliance-bridge/ai-act-classifier':
+      '@eucompliance/ai-act-classifier':
         specifier: workspace:*
         version: link:../ai-act-classifier
-      '@eu-compliance-bridge/fria-generator':
+      '@eucompliance/fria-generator':
         specifier: workspace:*
         version: link:../fria-generator
     devDependencies:
@@ -76,7 +76,7 @@ importers:
 
   packages/fria-generator:
     dependencies:
-      '@eu-compliance-bridge/ai-act-classifier':
+      '@eucompliance/ai-act-classifier':
         specifier: workspace:*
         version: link:../ai-act-classifier
     devDependencies:

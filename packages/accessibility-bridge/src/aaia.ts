@@ -6,7 +6,7 @@
  * to produce a comprehensive accessibility impact assessment for AI systems.
  */
 
-import type { ClassificationResult } from '@eu-compliance-bridge/ai-act-classifier'
+import type { ClassificationResult } from '@eucompliance/ai-act-classifier'
 import { AI_ACT_ACCESSIBILITY_MAPPINGS, type AIActAccessibilityMapping } from './ai-act-mapping.js'
 
 export interface AAIAInput {
@@ -75,8 +75,8 @@ export interface AAIAResult {
  *
  * @example
  * ```ts
- * import { classify } from '@eu-compliance-bridge/ai-act-classifier'
- * import { generateAAIA } from '@eu-compliance-bridge/accessibility-bridge'
+ * import { classify } from '@eucompliance/ai-act-classifier'
+ * import { generateAAIA } from '@eucompliance/accessibility-bridge'
  *
  * const classification = classify({
  *   name: 'Resume Screener',

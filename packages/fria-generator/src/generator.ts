@@ -14,7 +14,7 @@
  * 5. Documentation — Generate the FRIA report
  */
 
-import type { ClassificationResult } from '@eu-compliance-bridge/ai-act-classifier'
+import type { ClassificationResult } from '@eucompliance/ai-act-classifier'
 import { FUNDAMENTAL_RIGHTS, type FundamentalRight } from './rights-catalog.js'
 
 export interface FRIAInput {
@@ -93,8 +93,8 @@ export interface FRIAReport {
  *
  * @example
  * ```ts
- * import { classify } from '@eu-compliance-bridge/ai-act-classifier'
- * import { generateFRIA } from '@eu-compliance-bridge/fria-generator'
+ * import { classify } from '@eucompliance/ai-act-classifier'
+ * import { generateFRIA } from '@eucompliance/fria-generator'
  *
  * const classification = classify({
  *   name: 'Benefits Assessor',

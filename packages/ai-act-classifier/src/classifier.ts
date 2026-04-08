@@ -48,7 +48,7 @@ export interface ClassificationResult {
  *
  * @example
  * ```ts
- * import { classify } from '@eu-compliance-bridge/ai-act-classifier'
+ * import { classify } from '@eucompliance/ai-act-classifier'
  *
  * const result = classify({
  *   name: 'Resume Screener',
@@ -96,7 +96,7 @@ export function classify(input: ClassificationInput): ClassificationResult {
  *
  * @example
  * ```ts
- * import { classifyFromDescription } from '@eu-compliance-bridge/ai-act-classifier'
+ * import { classifyFromDescription } from '@eucompliance/ai-act-classifier'
  * import { generateText } from 'ai'
  * import { google } from '@ai-sdk/google'
  *

@@ -1,5 +1,5 @@
 {
-  "name": "@eu-compliance-bridge/ai-act-classifier",
+  "name": "@eucompliance/ai-act-classifier",
   "version": "0.1.0",
   "description": "EU AI Act risk classifier with Annex III mapping, conformity steps, and oversight requirements",
   "license": "EUPL-1.2",

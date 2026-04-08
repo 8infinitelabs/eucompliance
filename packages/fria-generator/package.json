@@ -1,5 +1,5 @@
 {
-  "name": "@eu-compliance-bridge/fria-generator",
+  "name": "@eucompliance/fria-generator",
   "version": "0.1.0",
   "description": "Fundamental Rights Impact Assessment generator based on DIHR/ECNL framework with disability impact",
   "license": "EUPL-1.2",
@@ -21,7 +21,7 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@eu-compliance-bridge/ai-act-classifier": "workspace:*"
+    "@eucompliance/ai-act-classifier": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.7.0",

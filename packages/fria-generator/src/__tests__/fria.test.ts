@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { classify } from '@eu-compliance-bridge/ai-act-classifier'
+import { classify } from '@eucompliance/ai-act-classifier'
 import { generateFRIA } from '../generator.js'
 import { FUNDAMENTAL_RIGHTS } from '../rights-catalog.js'
 

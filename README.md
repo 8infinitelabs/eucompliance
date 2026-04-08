@@ -56,24 +56,24 @@ Communities most affected by AI systems -- people with disabilities evaluated by
 
 | Package | Status | Description |
 |---------|--------|-------------|
-| [`@eu-compliance-bridge/ai-act-classifier`](./packages/ai-act-classifier) | **Ready** | Risk classification engine with Annex III matching, Article 5 prohibited practices, conformity steps, and oversight requirements |
-| [`@eu-compliance-bridge/accessibility-bridge`](./packages/accessibility-bridge) | Planned | Maps AI Act obligations to EN 301 549 requirements. The core innovation. |
-| [`@eu-compliance-bridge/fria-generator`](./packages/fria-generator) | Planned | Fundamental Rights Impact Assessment generator based on DIHR/ECNL framework |
-| [`@eu-compliance-bridge/docs-generator`](./packages/docs-generator) | Planned | Generates Annex IV technical documentation and accessibility statements |
-| [`@eu-compliance-bridge/cli`](./packages/cli) | Planned | CLI tool: `npx eu-compliance-bridge assess [url-or-description]` |
+| [`@eucompliance/ai-act-classifier`](./packages/ai-act-classifier) | **Ready** | Risk classification engine with Annex III matching, Article 5 prohibited practices, conformity steps, and oversight requirements |
+| [`@eucompliance/accessibility-bridge`](./packages/accessibility-bridge) | Planned | Maps AI Act obligations to EN 301 549 requirements. The core innovation. |
+| [`@eucompliance/fria-generator`](./packages/fria-generator) | Planned | Fundamental Rights Impact Assessment generator based on DIHR/ECNL framework |
+| [`@eucompliance/docs-generator`](./packages/docs-generator) | Planned | Generates Annex IV technical documentation and accessibility statements |
+| [`@eucompliance/cli`](./packages/cli) | Planned | CLI tool: `npx eu-compliance-bridge assess [url-or-description]` |
 
 ## Quick Start
 
 ### Install
 
 ```bash
-npm install @eu-compliance-bridge/ai-act-classifier
+npm install @eucompliance/ai-act-classifier
 ```
 
 ### Classify an AI System (Rule-based, No Dependencies)
 
 ```typescript
-import { classify } from '@eu-compliance-bridge/ai-act-classifier'
+import { classify } from '@eucompliance/ai-act-classifier'
 
 const result = classify({
   name: 'Resume Screener',
@@ -97,7 +97,7 @@ console.log(result.obligations)
 ### Classify Using an LLM (for Nuanced Analysis)
 
 ```typescript
-import { classifyFromDescription } from '@eu-compliance-bridge/ai-act-classifier'
+import { classifyFromDescription } from '@eucompliance/ai-act-classifier'
 import { generateText } from 'ai'
 import { google } from '@ai-sdk/google'
 
@@ -121,7 +121,7 @@ import {
   CONFORMITY_STEPS,         // 9 conformity assessment steps (Articles 9-72)
   OVERSIGHT_REQUIREMENTS,   // 6 human oversight requirements (Article 14)
   PROHIBITED_PRACTICES,     // 8 prohibited AI practices (Article 5)
-} from '@eu-compliance-bridge/ai-act-classifier'
+} from '@eucompliance/ai-act-classifier'
 
 // Use the data in your own tools, dashboards, or compliance workflows
 ```

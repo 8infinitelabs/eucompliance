@@ -1,5 +1,5 @@
 {
-  "name": "@eu-compliance-bridge/docs-generator",
+  "name": "@eucompliance/docs-generator",
   "version": "0.1.0",
   "description": "Generates Annex IV technical documentation, accessibility statements, and compliance reports",
   "license": "EUPL-1.2",
@@ -21,9 +21,9 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@eu-compliance-bridge/ai-act-classifier": "workspace:*",
-    "@eu-compliance-bridge/accessibility-bridge": "workspace:*",
-    "@eu-compliance-bridge/fria-generator": "workspace:*"
+    "@eucompliance/ai-act-classifier": "workspace:*",
+    "@eucompliance/accessibility-bridge": "workspace:*",
+    "@eucompliance/fria-generator": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.7.0",

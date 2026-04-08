@@ -6,9 +6,9 @@
  * single compliance document.
  */
 
-import type { ClassificationResult } from '@eu-compliance-bridge/ai-act-classifier'
-import type { AAIAResult } from '@eu-compliance-bridge/accessibility-bridge'
-import type { FRIAReport } from '@eu-compliance-bridge/fria-generator'
+import type { ClassificationResult } from '@eucompliance/ai-act-classifier'
+import type { AAIAResult } from '@eucompliance/accessibility-bridge'
+import type { FRIAReport } from '@eucompliance/fria-generator'
 
 export interface ComplianceReportInput {
   systemName: string

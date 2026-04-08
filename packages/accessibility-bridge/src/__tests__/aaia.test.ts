@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { classify } from '@eu-compliance-bridge/ai-act-classifier'
+import { classify } from '@eucompliance/ai-act-classifier'
 import { generateAAIA } from '../aaia.js'
 import { AI_ACT_ACCESSIBILITY_MAPPINGS } from '../ai-act-mapping.js'
 import { EN_301_549_CLAUSES } from '../en-301-549.js'

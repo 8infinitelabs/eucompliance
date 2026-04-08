@@ -1,5 +1,5 @@
 {
-  "name": "@eu-compliance-bridge/accessibility-bridge",
+  "name": "@eucompliance/accessibility-bridge",
   "version": "0.1.0",
   "description": "Maps EU AI Act Article 16(l) obligations to EN 301 549 accessibility requirements",
   "license": "EUPL-1.2",
@@ -21,7 +21,7 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@eu-compliance-bridge/ai-act-classifier": "workspace:*"
+    "@eucompliance/ai-act-classifier": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.7.0",

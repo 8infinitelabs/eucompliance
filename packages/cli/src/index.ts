@@ -10,10 +10,10 @@
  *   npx eu-compliance-bridge report --name "System" --purpose "What it does" --org "Org"
  */
 
-import { classify } from '@eu-compliance-bridge/ai-act-classifier'
-import { generateAAIA } from '@eu-compliance-bridge/accessibility-bridge'
-import { generateFRIA } from '@eu-compliance-bridge/fria-generator'
-import { generateComplianceReport } from '@eu-compliance-bridge/docs-generator'
+import { classify } from '@eucompliance/ai-act-classifier'
+import { generateAAIA } from '@eucompliance/accessibility-bridge'
+import { generateFRIA } from '@eucompliance/fria-generator'
+import { generateComplianceReport } from '@eucompliance/docs-generator'
 
 const args = process.argv.slice(2)
 const command = args[0]

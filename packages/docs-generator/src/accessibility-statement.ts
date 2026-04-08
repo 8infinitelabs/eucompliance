@@ -6,7 +6,7 @@
  * AI-specific requirements under Article 16(l).
  */
 
-import type { AAIAResult } from '@eu-compliance-bridge/accessibility-bridge'
+import type { AAIAResult } from '@eucompliance/accessibility-bridge'
 
 export interface AccessibilityStatementInput {
   /** AI system name */

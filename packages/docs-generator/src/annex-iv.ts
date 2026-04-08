@@ -6,8 +6,8 @@
  * Annex IV defines the required structure.
  */
 
-import type { ClassificationResult } from '@eu-compliance-bridge/ai-act-classifier'
-import { CONFORMITY_STEPS } from '@eu-compliance-bridge/ai-act-classifier'
+import type { ClassificationResult } from '@eucompliance/ai-act-classifier'
+import { CONFORMITY_STEPS } from '@eucompliance/ai-act-classifier'
 
 export interface AnnexIVInput {
   systemName: string
@@ -160,7 +160,7 @@ ${input.cybersecurity ?? '_To be completed: Describe accuracy levels, robustness
 
 ${input.accessibilityMeasures ?? '_To be completed: Describe how the system meets EN 301 549 requirements. Include WCAG 2.1 AA compliance for web interfaces, keyboard accessibility, screen reader compatibility, and accessible documentation._'}
 
-**Recommended:** Generate an AI Accessibility Impact Assessment (AAIA) using \`@eu-compliance-bridge/accessibility-bridge\` for detailed requirements.
+**Recommended:** Generate an AI Accessibility Impact Assessment (AAIA) using \`@eucompliance/accessibility-bridge\` for detailed requirements.
 `
   } else {
     doc += `**Status:** Not mandatory for ${input.classification.riskLevel}-risk systems, but recommended as best practice.
